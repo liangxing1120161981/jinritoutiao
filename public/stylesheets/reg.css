@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.banner {
+  width: 100%;
+  height: 1000px;
+  position: relative; }
+  .banner .loginwrap {
+    display: inline-block;
+    width: 110px;
+    height: 27px;
+    position: absolute;
+    left: 20px;
+    top: 20px; }
+    .banner .loginwrap img {
+      width: 100%; }
+  .banner .slowwrap {
+    position: absolute;
+    left: 50%;
+    margin-left: -275px;
+    top: 10px;
+    width: 550px;
+    height: 385px; }
+    .banner .slowwrap img {
+      width: 100%; }
+  .banner .loginbox {
+    position: absolute;
+    top: 230px;
+    left: 50%;
+    margin-left: -200px;
+    width: 300px;
+    padding: 28px 50px 38px;
+    background-color: rgba(255, 255, 255, 0.9); }
+    .banner .loginbox input {
+      font-size: 16px;
+      color: #666; }
+    .banner .loginbox input[name='username'] {
+      width: 300px;
+      height: 42px;
+      padding: 4px 8px;
+      border: 1px solid #ddd;
+      margin-bottom: 20px; }
+    .banner .loginbox #checkphone {
+      color: red;
+      position: absolute;
+      left: 49px;
+      top: 69px;
+      display: none; }
+    .banner .loginbox input[name='userpass'] {
+      width: 300px;
+      height: 42px;
+      padding: 4px 8px;
+      border: 1px solid #ddd;
+      margin-bottom: 20px; }
+    .banner .loginbox #checkpass {
+      color: red;
+      position: absolute;
+      top: 142px;
+      display: none; }
+    .banner .loginbox #checkemail {
+      color: red;
+      position: absolute;
+      top: 286px;
+      display: none; }
+    .banner .loginbox input[name='email'] {
+      width: 300px;
+      height: 42px;
+      padding: 4px 8px;
+      border: 1px solid #ddd;
+      margin-bottom: 20px; }
+    .banner .loginbox input[name='useragain'] {
+      width: 300px;
+      height: 42px;
+      padding: 4px 8px;
+      border: 1px solid #ddd;
+      margin-bottom: 20px; }
+    .banner .loginbox #checkagain {
+      color: red;
+      position: absolute;
+      top: 214px;
+      display: none; }
+    .banner .loginbox input[name='check'] {
+      width: 300px;
+      height: 42px;
+      padding: 4px 8px;
+      border: 1px solid #ddd; }
+    .banner .loginbox input[name='phonecheck'] {
+      width: 300px;
+      height: 42px;
+      margin-top: 10px;
+      padding: 4px 8px;
+      border: 1px solid #ddd; }
+    .banner .loginbox span {
+      font-size: 13px;
+      display: inline-block;
+      margin-top: 10px; }
+      .banner .loginbox span a {
+        color: #222222; }
+        .banner .loginbox span a b {
+          color: #406599; }
+    .banner .loginbox input[type='submit'] {
+      width: 300px;
+      height: 42px;
+      background: #f85959;
+      text-align: center;
+      line-height: 42px;
+      color: white;
+      border: none;
+      margin-bottom: 40px;
+      margin-top: 20px;
+      cursor: pointer; }
+      .banner .loginbox input[type='submit']:hover {
+        opacity: .8; }
+    .banner .loginbox .titleimg {
+      width: 50px;
+      float: left;
+      margin-left: 18px;
+      margin-right: 7px; }
+      .banner .loginbox .titleimg .zhanghao {
+        text-align: center; }
+        .banner .loginbox .titleimg .zhanghao img {
+          width: 40px; }
+          .banner .loginbox .titleimg .zhanghao img:hover {
+            opacity: .8; }
+      .banner .loginbox .titleimg .acount {
+        color: #505050;
+        font-size: 10px; }
+        .banner .loginbox .titleimg .acount p {
+          text-align: center;
+          margin-left: -10px; }
+
+/*# sourceMappingURL=reg.css.map */

@@ -1,0 +1,602 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.head{
+    width: 100%;
+    height: 34px;
+    background: black;
+    .leftbar{
+        width: 62%;
+        float: left;
+        a{
+            display: inline-block;
+            width: 6%;
+            height: 34px;
+            line-height: 34px;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+        }
+    }
+    .rightbar{
+        width: 25.4%;
+        float: right;
+        a{
+            display: inline-block;
+            line-height: 34px;
+            width: 17.7%;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+            float: right;
+            margin-right: 8px;
+        }
+        .active{
+            background: red;
+        }
+    }
+}
+.middlebar{
+    width: 100%;
+    height: 58px;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.12);
+    .center{
+        width: 92.6%;
+        margin: 0 auto;
+        height: 58px;
+        position: relative;
+        .middleimg{
+            width: 9%;
+            float: left;
+            height: 44px;
+            position: absolute;
+            left: 0;
+            top: 16px;
+            a{
+                img{
+                    width: 100%;
+                    vertical-align: middle;
+                   
+                }
+            }
+        }
+        .middleword{
+            line-height: 58px;
+            float: left;
+            position: absolute;
+            left: 130px;
+            top: 0;
+            span{
+                a{
+                    color: #444;
+                }
+            }
+            b{
+                color: #999;
+            }
+        }
+        .search{
+            width: 340px;
+            position:absolute;
+            right: 0;
+            top: 7px;
+          #every{
+              width: 61%;
+              height: 34px;
+              padding: 3px 0 3px 5px;
+          }
+      .anniu{
+          width: 21%;
+          height: 42px;
+          border: 1px solid #eee;
+          float: right;
+          line-height: 42px;
+          text-align: center;
+          background: #208eda;
+          color: white;
+          margin-right: 50px;
+      }
+        }
+    }
+}
+.contain{
+    width: 92%;
+    margin: 0 auto;
+    margin-top: 20px;
+    overflow: hidden;
+    .space{
+        width: 9%;
+        min-height: 300px;
+        margin-right: 30px;
+        float: left;
+        .icon{
+            a{
+                img{
+                    vertical-align: middle;
+                }
+                span{
+                    color: red;
+                    margin-left: 10px;
+                    font: 20px/24px Georgia;
+                }
+            }
+        }
+        .hr{
+            width: 96px;
+            height: 1px;
+            background: #e8e8e8;
+            margin-top: 12px;
+        }
+        .iconweixin{
+            margin-top: 10px;
+            margin-bottom: 5px;
+            a{
+                img{
+                    vertical-align: middle;
+                    &:hover{
+                        opacity: .8;
+                    }
+                }
+                span{
+                    color: #657180;
+                    font-size: 16px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    .indexmiddle{
+        width: 660px;
+        float: left;
+        .sub{
+            margin-top: 12px;
+            margin-bottom: 20px;
+            font-size: 13px;
+            span{
+                font-size: 10px;
+                color: #777;
+            }
+            .create{
+                border: 1px solid #777;
+            }
+        }
+        .article{
+            margin-top: 20px;
+            p{
+                margin: 16px 0;
+                line-height: 27px;
+            }
+            .leader{
+                display: inline-block;
+                margin-left: 154px;
+            }
+
+        }
+        .boxTag{
+            margin-bottom: 28px;
+            height: 21px;
+            ul{
+                float: left;
+                width: 309px;
+                height: 100%;
+                li{
+                    img{
+                        vertical-align: middle;
+                    }
+                    margin-left: 10px;
+                    float: left;
+                    a{
+                        color:#406599;
+                    }
+                }
+            }
+            .collect{
+                width: 115px;
+                height: 20px;
+                float: right;
+                .collectleft{
+                    float: right;
+                    a{
+                        color: #999;
+                        img{
+                           vertical-align: middle;
+
+                        }
+                    }
+                }
+                .collectright{
+                    float: right;
+                    a{
+                        color: #999;
+                        img{
+                            vertical-align: middle;
+                        }
+                    }
+                }
+
+            }
+        }
+        .talking{
+            margin: 30px 0;
+            width: 660px;
+            height: 673px;
+            .saveheader{
+                position: relative;
+                margin-bottom: 20px;
+                font-size: 16px;
+                font-weight: 700;
+                em{
+                   font:22px/24px Georgia;
+                    color:#f85959;
+                }
+            }
+            .inputbox{
+                width: 660px;
+                height: 46px;
+                box-sizing: border-box;
+                img{
+                    vertical-align: middle;
+                    float: left;
+                }
+                input[name='talk']{
+                    width: 507px;
+                    height: 42px;
+                    float: left;
+                }
+                .comment{
+                    display: inline-block;
+                    width: 110px;
+                    line-height: 46px;
+                    text-align: center;
+                    background: #3f404c;
+                    color: white;
+                    float: right;
+                    box-sizing: border-box;
+                }
+            }
+            .talklist{
+                li{
+                    padding: 7px 0;
+                    border-top: 1px solid #f2f2f2;
+                    margin-top: 22px;
+                    .icon{
+                        float: left;
+                        img{
+                            border-radius: 50%;
+                            width: 28px;
+                        }
+                    }
+                .content{
+                    .warsolider{
+                        float: left;
+                       margin-left: 20px;
+                        margin-top: 3px;
+                        .solider{
+                            color: #406599;
+                            font-size: 14px;
+                        }
+                        span{
+                            color: #777;
+                            font-size: 14px;
+                        }
+                    }
+                }
+                    .fail{
+                        font-size: 14px;
+                        line-height: 22px;
+                        color:#222;
+                        clear: both;
+                        margin-left: 48px;
+                    }
+                    .footaction{
+                        .replay{
+                            color: #406599;
+                            cursor: pointer;
+                            font-size: 12px;
+                            margin-left: 47px;
+                        }
+                        .num{
+                            color: #406599;
+                            cursor: pointer;
+                            font-size: 14px;
+                        }
+                        .good{
+                            float: right;
+                            color: #999;
+                            margin-right: 5px;
+                        }
+                        .delete{
+                            float: right;
+                        }
+                    }
+                }
+            }
+        }
+        .loadmore{
+            display: block;
+            width: 660px;
+           line-height: 30px;
+            background: #f4f5f6;
+            color: #406599;
+            font-size: 13px;
+            text-align: center;
+        }
+        .detailmore{
+            width: 100%;
+            margin-top: 15px;
+            .commened{
+                display: inline-block;
+                background: red;
+                width: 4px;
+                height: 18px;
+                border-radius: 2px;
+                float: left;
+                margin-top: 5px;
+            }
+            h3{
+                margin-left: 5px;
+                float: left;
+                margin-bottom: 10px;
+            }
+            .newsmore{
+                clear: both;
+                margin-top: 8px;
+                li{
+                    overflow: hidden;
+                    padding: 10px 0;
+                    border-bottom: 1px solid #e8e8e8;;
+                    .imgbox{
+                        float: left;
+                        a{
+                            img{
+                                width: 156px;
+                            }
+                        }
+                    }
+                    .newstext{
+                        float: right;
+                        .star{
+                            color: black;
+                            font-weight: bold;
+                            font-size: 19px;
+                            display: inline-block;
+                            width: 485px;
+                            &:hover{
+                                color: #00B7FF;
+                            }
+                        }
+                        .footbar{
+                            margin-top: 15px;
+                            .footbar-img{
+                                img{
+                                    width: 18px;
+                                    border-radius: 50%;
+                                    vertical-align: middle;
+                                }
+                            }
+                            .footbar-talk{
+                                .foots{
+                                    font-size: 14px;
+                                    color: #999;
+                                    &:hover{
+                                        color: #2a90d7;
+                                    }
+                                }
+                            }
+                            .relevant{
+                                font-size: 12px;
+                                color: #2a90d7;
+                                display: inline-block;
+                                width: 30px;
+                                height: 16px;
+                                border: 1px solid #2a90d7;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    .rightmoudle{
+        width: 340px;
+        height: 3000px;
+        float: right;
+        .pannel{
+            width: 300px;
+            border-top: 2px solid #ed4040;
+            background-color: #f4f5f6;
+            margin-bottom: 16px;
+            padding: 15px 20px 20px;
+            overflow: hidden;
+            .userlogo{
+                        a{
+                            img{
+                                width: 50px;
+                                float: left;
+                            }
+                        }
+                    }
+            .usercard{
+                width: 102px;
+                height: 52px;
+                float: left;
+                margin-left: 5px;
+                .notice{
+                    display: block;
+                    color: white;
+                   line-height: 24px;
+                    width: 74px;
+                    text-align: center;
+                    background: #2a90d7;
+                    font-size: 12px;
+                    border-radius: 5px;
+                }
+            }
+            .articlelist{
+                margin-top: 65px;
+                width: 340px;
+                list-style: disc;
+                li{
+                    margin-bottom: 8px;
+                    a{
+                        color: #222;
+                        font-size: 14px;
+                        line-height: 15px;
+                    }
+                }
+            }
+        }
+        .rightimg{
+            width: 300px;
+            height: 300px;
+            padding: 20px;
+            background: #f4f5f6;
+            a{
+                img{
+                    width: 300px;
+                }
+            }
+            p{
+                font-size: 10px;
+                color: #2a90d7;
+                margin-top: 15px;
+            }
+        }
+        .panelist{
+            width: 300px;
+            padding: 15px 20px 20px;
+            border-top: 2px solid #ed4040;
+            background-color: #f4f5f6;
+            margin-bottom: 16px;
+            margin-top: 10px;
+            a{
+                font-size: 14px;
+                color: #999;
+                display: block;
+                margin-top: 15px;
+                span{
+                    color: #222;
+                    font-size: 14px;
+                    margin-left: 15px;
+                    &:hover{
+                        color: #999;
+                    }
+                }
+            }
+        }
+        .replace{
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            background: #f4f5f6;
+            a{
+                img{
+                    width: 248px;
+                }
+            }
+        }
+        .movielist{
+            width: 300px;
+            padding: 15px 20px 20px;
+            background: #f4f5f6;
+            overflow: hidden;
+            margin-top: 15px;
+            ul{
+                margin-top: 15px;
+                li{
+                    overflow: hidden;
+                    margin-bottom: 15px;
+                    a{
+                        .text{
+                            width: 162px;
+                            float: left;
+                            color: #999;
+                            font-size: 13px;
+                            &:hover{
+                                color: #007aff;
+                            }
+                            span{
+                                display: inline-block;
+                                margin-top: 13px;
+                                color: #222;
+                                font-size: 10px;
+                            }
+                        }
+                        .imgbox{
+                            float: right;
+                        }
+                    }
+                }
+            }
+        }
+        .beatyimg{
+            width: 300px;
+            border-top: 2px solid #ed4040;
+            background-color: #f4f5f6;
+            margin-bottom: 16px;
+            padding: 15px 20px 20px;
+            ul{
+                margin-top: 10px;
+                overflow: hidden;
+                li{
+                    width: 144px;
+                    float: left;
+                    margin-right: 6px;
+                   a{
+                       .imgbox{
+                           img{
+                               width: 144px;
+                           }
+                       }
+
+                   }
+                    p{
+                        font-size: 14px;
+                        width: 146px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media screen and (max-width:800px){
+   .head{
+       .leftbar{
+           a{
+             font-size: 12px;  
+           }
+       }
+       .rightbar{
+           a{
+                font-size: 12px;
+           }
+          
+       }
+   }
+    .middlebar{
+        .center{
+            .middleword{
+                display: none;
+            }
+            .search{
+                position: absolute;
+                left: 215px;
+            }
+        }
+    }
+    .contain{
+        .space{
+            display: none;
+        }
+    }
+}

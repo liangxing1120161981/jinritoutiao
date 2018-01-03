@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+		, initial-scale=1.0" />
+    <title>列表页</title>
+    <link rel="stylesheet" href="stylesheets/newslist.css"/>
+    <link rel="stylesheet" href="stylesheets/swiper-3.4.2.min.css">
+</head>
+<body>
+<div class="header">
+    <a class="download" href="javascript:;">下载APP</a>
+    <div class="weather">
+        <span>北京</span>
+        <span>多云</span>
+        <span><em>-5</em>°&nbsp;/&nbsp;<em>4</em>°</span>
+        <img class="jiantou" src="images/2.png" />
+    </div>
+    <a href="javascripts:;" class='feedback'>反馈</a>
+    <a href="reg.html" class='login'>注册</a>
+</div>
+<div class="content">
+    <div class="leftban">
+        <a class="logo" href="javascript:;"><img src="images/1.png" ></a>
+        <ul class="list">
+            <li><a href="javascript:;" style="background: red; color: white;">推荐</a></li>
+            <li><a href="javascript:;">热点</a></li>
+            <li><a href="javascript:;">视屏</a></li>
+            <li><a href="javascript:;">图片</a></li>
+            <li><a href="javascript:;">社会</a></li>
+            <li><a href="javascript:;">科技</a></li>
+            <li><a href="javascript:;">娱乐</a></li>
+            <li><a href="javascript:;">体育</a></li>
+            <li><a href="javascript:;">汽车</a></li>
+            <li><a href="javascript:;">财经</a></li>
+            <li><a href="javascript:;">搞笑</a></li>
+            <li><a href="javascript:;">更多</a></li>
+        </ul>
+    </div>
+    <div class="center">
+        <ul class="scrollcenter">
+            <%data.forEach(function(newsinfos){%>
+            <li class="newslist"><div class="main">
+                    <a class="caiming" href="newsdetail?newsid=<%=newsinfos.newsid%>"><img src="<%=newsinfos.newsurl%>"></a>
+                    <a class="word" href="newsdetail?newsid=<%=newsinfos.newsid%>"><%=newsinfos.newstitle%></a>
+                    <div class="barfoot">
+                        <a href="javascript:;">
+                            <img src="images/7.jpg">
+                            <span class="source"><%=newsinfos.newssource%></span>
+                            <span class="circle">⋅</span>
+                            <span class="visit"><%=newsinfos.newsvisit%></span>
+                            <span class="circle">⋅</span>
+                        </a>
+                        <span class="time"><%=newsinfos.newstime%></span>
+                    </div>
+                </div></li>
+            <%
+            })%>
+        </ul>
+    </div>
+    <div class="rightmodule">
+        <div class="input"><input id="every" type="text" value="大家都在搜，何洁被记者追问"></div>
+        <div class="anniu">搜索</div>
+        <div class="homeright"><a href="javascript:;"><img src="images/8.jpg"></a><p class="adver">广告</p></div>
+        <div class="wrap"><div class="panel">
+                <h3>24小时新闻</h3>
+                <ul class="news">
+                    <li><div class="imgbox"><a href="javascript:;"><img src="images/17.jpg"></a></div>
+                        <div class="build"><a href="javascript:;">印度在藏南地区建2座战略桥梁 印媒：还要建400座</a></div>
+                    </li>
+                    <li><div class="imgbox"><a href="javascript:;"><img src="images/18.jpg"></a></div>
+                        <div class="build"><a href="javascript:;">台军叫嚣要大陆军机“回头” 解放军冷回：别干扰我！</a></div>
+                    </li>
+                    <li><div class="imgbox"><a href="javascript:;"><img src="images/19.jpg"></a></div>
+                        <div class="build"><a href="javascript:;">韩国海警对40余艘中国渔船发射200余发子弹 中方回应</a></div>
+                    </li>
+                    <li><div class="imgbox"><a href="javascript:;"><img src="images/20.jpg"></a></div>
+                        <div class="build"><a href="javascript:;">陆军正副5位参谋长，分别来自不同兵种</a></div>
+                    </li>
+                </ul>
+            </div></div>
+        <div class="taobao"><a class="yu" href="javascript:;"><img src="images/1.webp"></a></div>
+        <div class="hot"><h4>热门视频</h4>
+            <ul class="video">
+                <li>
+                    <div class="cell">
+                        <a class="countryside" href="javascript:;">男人唱给女人们的一首歌，唱的肝肠寸断，女人听完</a><br/>
+                        <a class="play" href="javascript:;">17万次播放 ⋅ 326评论</a>
+                    </div>
+                    <div class="imgs"><a href="javascript:;"><img src="images/5.png"></a></div>
+                </li>
+                <li>
+                    <div class="cell">
+                        <a class="countryside" href="javascript:;">白发变黑发只需放姜和它，一辈子都不用再去染发</a><br/>
+                        <a class="play" href="javascript:;">17万次播放 ⋅ 326评论</a>
+                    </div>
+                    <div class="imgs"><a href="javascript:;"><img src="images/6.png"></a></div>
+                </li>
+                <li>
+                    <div class="cell">
+                        <a class="countryside" href="javascript:;">荣耀游戏竟然除电脑版了？邀你一起开黑</a><br/>
+                        <a class="play" href="javascript:;">17万次播放 ⋅ 326评论</a>
+                    </div>
+                    <div class="imgs"><a href="javascript:;"><img src="images/7.png"></a></div>
+                </li>
+                <li>
+                    <div class="cell">
+                        <a class="countryside" href="javascript:;">报恩：小伙当年给了小伙10快钱，五年男子带了5000元....</a><br/>
+                        <a class="play" href="javascript:;">17万次播放 ⋅ 326评论</a>
+                    </div>
+                    <div class="imgs"><a href="javascript:;"><img src="images/8.png"></a></div>
+                </li>
+                <li>
+                    <div class="cell">
+                        <a class="countryside" href="javascript:;">农手机用久了很卡，清理垃圾不管用，打开这个隐藏功能..</a><br/>
+                        <a class="play" href="javascript:;">17万次播放 ⋅ 326评论</a>
+                    </div>
+                    <div class="imgs"><a href="javascript:;"><img src="images/4.png"></a></div>
+                </li>
+                <li>
+                    <div class="cell">
+                        <a class="countryside" href="javascript:;">农村小伙赌沉香，一整棵树8000多块钱买回去，结果</a><br/>
+                        <a class="play" href="javascript:;">17万次播放 ⋅ 326评论</a>
+                    </div>
+                    <div class="imgs"><a href="javascript:;"><img src="images/4.png"></a></div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="shadow"></div>
+        <div class="panel">
+            <h4>精彩图片</h4>
+            <ul class="old">
+                <li><a href="javascript:;"><img src="images/31.jpg"><p>街头几棵圣诞树，到底好看吗？你说下呗</p></a></li>
+                <li><a href="javascript:;"><img src="images/32.jpg"><p>三亚南山寺全体僧众在108米海上观音圣像下举</p></a></li>
+                <li><a href="javascript:;"><img src="images/33.jpg"><p>曝光从毛坯到精装装修全部费用清单(仅限北</p></a></li>
+                <li><a href="javascript:;"><img src="images/34.jpg"><p>直击世界上屁股最大的女人，臀围2米4，丈夫</p></a></li>
+                <li><a href="javascript:;"><img src="images/35.jpg"><p>娱乐圈女星都不愿和周冬雨合照，看完这些照</p></a></li>
+                <li><a href="javascript:;"><img src="images/36.jpg"><p>家庭酒吧装修案例鉴赏，打造一片静谧的私</p></a></li>
+                <li><a href="javascript:;"><img src="images/37.jpg"><p>海南全铝家居、全屋定制领导品牌！</p></a></li>
+                <li><a href="javascript:;"><img src="images/38.jpg"><p>香港海港城大型超写实雕塑展，俊男靓女的狂</p></a></li>
+                <li><a href="javascript:;"><img src="images/39.jpg"><p>让人美得移不开眼的父母旧照 真怀疑自己是</p></a></li>
+                <li><a href="javascript:;"><img src="images/34.jpg"><p>两个熊孩子亲切“握手”致意，就像动画片</p></a></li>
+            </ul>
+        </div>
+        <div class="module-panel">
+            <h4>更多</h4>
+            <a href="javascript:;">关于头条</a>
+            <a href="javascript:;">加入头条</a>
+            <a href="javascript:;">媒体报告</a>
+            <a href="javascript:;">媒体合作</a>
+            <a href="javascript:;">产品合作</a>
+            <a href="javascript:;">合作说明</a>
+            <a href="javascript:;">广告投放</a>
+            <a href="javascript:;">联系我们</a>
+            <a href="javascript:;">用户协议</a>
+            <a href="javascript:;">侵犯投诉</a>
+            <a href="javascript:;">廉洁举报</a>
+        </div>
+        <div class="friendship">
+            <h4>友情链接</h4>
+            <a href="javascript:;">光明网</a>
+            <a href="javascript:;">央广</a>
+            <a href="javascript:;">国际在线</a>
+            <a href="javascript:;">中国西藏网</a>
+            <a href="javascript:;">参考消息</a>
+            <a href="javascript:;">环球网</a>
+            <a href="javascript:;">中青在线</a>
+            <a href="javascript:;">中青网</a>
+            <a href="javascript:;">海外网</a>
+            <a href="javascript:;">中国网</a>
+            <a href="javascript:;">未来网</a>
+            <a href="javascript:;">千龙网</a>
+            <a href="javascript:;">新京报</a>
+            <a href="javascript:;">北青网</a>
+            <a href="javascript:;">法制晚报</a>
+            <a href="javascript:;">北京晨报</a>
+            <a href="javascript:;">北京商报</a>
+            <a href="javascript:;">北京娱乐信报</a>
+            <a href="javascript:;">奥一网</a>
+            <a href="javascript:;">金羊网</a>
+            <a href="javascript:;">光明网</a>
+            <a href="javascript:;">央广</a>
+            <a href="javascript:;">国际在线</a>
+            <a href="javascript:;">中国西藏网</a>
+            <a href="javascript:;">参考消息</a>
+            <a href="javascript:;">环球网</a>
+            <a href="javascript:;">中青在线</a>
+            <a href="javascript:;">中青网</a>
+            <a href="javascript:;">海外网</a>
+            <a href="javascript:;">中国网</a>
+            <a href="javascript:;">未来网</a>
+            <a href="javascript:;">千龙网</a>
+            <a href="javascript:;">新京报</a>
+            <a href="javascript:;">北青网</a>
+            <a href="javascript:;">法制晚报</a>
+            <a href="javascript:;">北京晨报</a>
+            <a href="javascript:;">北京商报</a>
+            <a href="javascript:;">北京娱乐信报</a>
+            <a href="javascript:;">奥一网</a>
+            <a href="javascript:;">金羊网</a>
+        </div>
+        <div class="company">
+            <p class="time"> © 2017 今日头条 </p>
+            <a href="javascript:;">中国互联网举报中心 京ICP证140141号</a>
+            <a href="javascript:;">京ICP备12025439号-3 网络文化经营许可证</a>
+            <p>京-非经营性-2016-0081</p>
+            <p>互联网药品信息服务资格证书</p>
+            <a href="javascript:;">跟帖评论自律管理承诺书</a>
+            <p>违法和不良信息举报：010-58341833</p>
+            <p>公司名称：北京字节跳动科技有限公司</p>
+            <a href="javascript:;"><img src="images/62.png">京公网安备 11000002002023号</a>
+        </div>
+    </div>
+</div>
+<!--商品列表-->
+
+</body>
+</html>
+<script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.js"></script>
+<script src="javascripts/toutiao.js"></script>
+<script src="javascripts/swiper-3.4.2.min.js"></script>
+<script>
+
+</script>
